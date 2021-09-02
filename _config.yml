@@ -17,21 +17,38 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-avatar: /assets/img/avatar.png
-title: Lixv Yang
-email: yamglixin621@gmail.com
-cover_image: /assets/img/cover.jpg
+theme: panthera-jekyll
 description: >- # this means to ignore newlines until "baseurl:"
+left_side:
+  background_image: /assets/img/cover.jpg
+  background_color: [CSS background color, e.g. "#F00". We strongly recommend quoting this value. Don't worry about the transparency of the background, we've taken care of that.]
+  close_button_color: [CSS background color, e.g. "#F00". We strongly recommend quoting this value.]
+  text_color: [CSS background color, e.g. "#F00". We strongly recommend quoting this value.]
+menu:
+  - text: Portfolio
+    link: /
+    icon: ""
+social_icons:
+  - name: [Email]
+    link: [https://yanglixin621@gmail.com]
+    icon: [fas fa-envelope]
+  - name: [Twitter]
+    link: [https://twitter.com/vszhub]
+    icon: [fab fa-twitter]
+  - name: [Zhihu]
+    link: [https://www.zhihu.com/people/li-xin-32-2]
+    icon: [fab fa-zhihu]
+  - name: [Github]
+    link: [https://github.com/LixvYang]
+    icon: [fab fa-github-alt]
+footer:
+  copyright_text: "Copyright LixvYang"
 
-
-url: "lixvyang.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  lixvyang
 
 # Build settings
 plugins:
   - jekyll-remote-theme
-remote_theme: vszhub/not-pure-poole
+remote_theme: christianezeani/panthera-jekyll
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the   `exclude:` key here will be automatically added to
